@@ -154,7 +154,7 @@ function canvasChart() {
     backgroundColor.push(color + "0.2)");
     borderColor.push(color + "1)");
 }
-
+  //adding chart
   var ctx = document.getElementById('myChart');
   var myChart = new Chart(ctx, {
     type: 'bar',
