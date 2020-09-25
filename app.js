@@ -122,6 +122,9 @@ function handleVote(event) {
     imagesSection.removeEventListener('click', handleVote);
     displayResults();
     canvasChart();
+    sendToLocalStorage();
+    // gitFromLocalStorage();
+
   }
 }
 
@@ -214,5 +217,34 @@ function getingobjectsDisplayTime(){
     arrayDisplayTime[i]=allProduct[i].timesDisplayed;
   }
 
+}
+
+
+
+var getjson,sentjson;
+/*function to send objects of donation details to the local storage*/
+
+function sendToLocalStorage() {
+  sentjson = JSON.stringify(allProduct);
+  localStorage.setItem('allP', sentjson);
+  
+}
+// console.log(sentjson);
+
+/*function to get objects of donation details to the local storage*/
+
+function gitFromLocalStorage() {
+  getjson = localStorage.getItem('allP');
+  if (getjson) {
+    allProduct = JSON.parse(getjson);
+  }
+}
+
+/*function for render the result and chart if there data in local storage */
+getjson = localStorage.getItem('allP');
+if(getjson){
+  gitFromLocalStorage()
+  displayResults();
+  canvasChart();
 }
 
