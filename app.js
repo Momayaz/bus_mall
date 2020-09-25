@@ -220,6 +220,7 @@ function getingobjectsDisplayTime(){
 }
 
 
+
 var getjson,sentjson;
 /*function to send objects of donation details to the local storage*/
 
@@ -246,3 +247,4 @@ if(getjson){
   displayResults();
   canvasChart();
 }
+
