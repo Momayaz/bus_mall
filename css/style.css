@@ -1,31 +1,62 @@
+
+body{
+    width: 100%px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5iadSveNiD_DPAbL11N1kXsNU5tW9bzkMNQ&usqp=CAU');
+    background-size: cover;
+}
+header{
+    background-color: #163752;
+} 
+ h1 {
+    font-family: rockwell;
+    color: black;
+    text-shadow: 2px 2px 4px turquoise;
+    font-size: 100px;
+    margin-top: 0;
+}
+.appinfo{ 
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 30px; 
+    text-transform: uppercase;
+}
 #left_img{
     width:250px;
     height: 200px;
     display: inline;
-    border: 20px solid;
-    border-color: rgba(112, 112, 112, 0.424);
+    border-radius: 100px 0 0 0;
+    border-color: #E0BE01;
 }
  #middel_img{
     width:250px;
     height: 200px;
     display: inline;
-    border: 20px solid;
+    border-radius: 0;
     border-color: rgba(112, 112, 112, 0.424);
 }
 #right_img{
     width:250px;
     height: 200px;
     display: inline;
-    border: 20px solid;
+    border-radius: 0 100px 0 0;
     border-color: rgba(112, 112, 112, 0.424);
     
+}
+#images{
+    margin-left: 500px;
+    margin-top: 250px;
 }
 #logoimage{
     width: 150px;
 }
-header h1 {
-    background-color: rgb(0, 149, 0);
-    font-family: rockwell;
-    color: black;
-    text-shadow: 2px 2px 4px turquoise;
+h2 {
+    background-color: #004D66;
+    width: 100px;
+    font-size: 30px;
+}
+
+#finalResult li {
+font-size: 25px;
+color: #96A100;
 }
